@@ -1,0 +1,524 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.footer_nav a {
+    color: #FFFFFF;
+}
+.content ul li {
+    color: #1A1C20;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer_nav ul li ul li {
+    clear: left;
+    display: block;
+}
+.footer_nav ul li {
+    display: inline-block;
+    float: left;
+    font-size: 10px;
+    padding-right: 10px;
+}
+.content ul li {
+    color: #1A1C20;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer_nav ul li ul a {
+    color: #A6A8AB;
+}
+
+.footer .contact h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.footer .contact p {
+    color: #A6A8AB;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.footer .contact p {
+    color: #A6A8AB;
+    font-size: 12px;
+}
+.footer .contact {
+    text-align: right;
+}
+.footer .contact a {
+    border-bottom: 1px solid #8C8C8C;
+    color: #A6A8AB;
+}
+#saikuFeatures h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+}
+.footer {
+    background: url("/img/footer_grad.jpg") repeat-x scroll left top transparent;
+    float: left;
+    min-height: 180px;
+    position: relative;
+    width: 100%;
+}
+.footer .content {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.footer .contact {
+    float: right;
+    margin-top: 20px;
+    position: relative;
+    text-align: right;
+    width: 410px;
+}
+
+
+.footer .contact {
+    float: right;
+    margin-top: 20px;
+    position: relative;
+    text-align: right;
+    width: 410px;
+}
+.footer_nav ul li {
+    font-size: 10px;
+}
+.footer .content .footer_nav {
+    float: left;
+    margin-top: 20px;
+    width: 550px;
+}
+
+
+.footer_nav ul {
+    font-size: 10px;
+    margin-left: 0;
+}
+.footer_nav ul li {
+    display: inline-block;
+    float: left;
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+
+.footer_nav ul li ul li {
+    clear: left;
+    display: block;
+}
+
+
+.footer_nav ul li ul a {
+    color: #A6A8AB;
+}
+
+
+.headerh1{
+ font-family: inherit;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+    color: #79100F;
+}
+h1.sliderTitle {
+    background-image: url("/img/saiku_free_small.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #E1E1E1;
+    height: 90px;
+}
+
+.header .contact {
+    float: right;
+    font-size: 14px;
+    width: 220px;
+}
+.saikuheader {
+    background: url("/img/navigationBackground.png") repeat-x scroll 0 0 transparent;
+}
+.saikuheader {
+    height: 60px;
+    position: relative;
+}
+.saikuSubheader {
+    background: url("/img/headerBackgroundsmall.png") repeat-x scroll 0 0 transparent;
+}
+.header {
+    height: 60px;
+    position: relative;
+}
+.full-width {
+	width: 100%;
+}
+.cont {
+ width: 75%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .contact p {
+    color: white;
+    line-height: 14px;
+    margin-bottom: 0;
+    margin-top: 23px;
+}
+.content p {
+}
+.content p {
+    font-size: 14px;
+}
+
+.content a {
+    color: #FF9124 !important;
+}
+.header .content h1 {
+    background: url("/img/meteorite.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 60px;
+    margin-bottom: 0;
+    text-indent: -10000px;
+    width: 212px;
+}
+.content h1 {
+    color: #FD8E40;
+    font-size: 26px;
+    line-height: 32px;
+}
+.saikuanalytics h1 {
+    background: url("/img/saiku.png") no-repeat scroll center center transparent !important;
+}
+.container {
+	position:relative;
+}
+
+#headerIndex {
+	background-image: url(../img/headerBackgroundsmall.png);
+	background-repeat: repeat-x;
+	background-color: #ebebeb;
+	/* border-bottom: 1px #e1e1e1 solid; */
+}
+
+#headerIndex h1.sliderTitle {
+	color: #e1e1e1;
+	background-image: url(../img/saiku_free_small.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 90px;
+
+}
+
+#headerIndex h1#saikuDescription {
+	color: #79100f;
+	text-align: center;
+}
+
+.headerArea {
+	background-color: #ebebeb;
+	border-bottom: 1px #e1e1e1 solid;
+	background-image: url(../img/saiku-shadow.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	padding-bottom: 50px;
+}
+
+.headerArea h1 {
+	color: #79100f;
+	text-align: center;
+	margin: 50px 0px;
+}
+
+#headerBottom {
+	height: 92px;
+	width: 100%;
+	background-image: url(../img/saiku_free_small.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#headerBottomContinuation {
+	height: 80px;
+	width: 100%;
+	background-image: url(../img/headerBackgroundContinuation.png);
+	background-position: top left 1px;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
+
+.center {
+	text-align: center;
+}
+
+.lightBackground {
+	background: #f5f5f5;
+	color: #767676;
+	padding-bottom: 50px;
+}
+
+.lightBackground h6 {
+	color: #79100f;
+}
+
+.lightBackground h1 {
+	color: #696969;
+}
+
+.lightBackground h2 {
+	color: #000000;
+}
+
+#indexContent {
+	border-top: 1px #f7f7f7 solid;
+}
+
+.logoRow {
+	margin-top: 70px;
+}
+
+.logoRow a:link,
+.logoRow a:visited {
+	opacity: .7;
+	transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+
+.logoRow a:hover,
+.logoRow a:active {
+	opacity: 1;
+	transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+
+/*.footer {
+	background: url(../img/footerBackground.png);
+	height: 84px;
+	padding: 30px 0px;
+}
+
+.footer a:link,
+.footer a:visited {
+	font-size: 12px;
+	font-weight: 300;
+	color: #878787;
+	text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:active {
+	font-size: 12px;
+	font-weight: 300;
+	color: #989898;
+	text-decoration: none;
+}
+
+.footer a.titleLink {
+	font-size: 12px;
+	font-weight: 400;
+	display: block;
+	margin-bottom: 0px;
+	line-height: 10px;
+}
+*/
+a.btn.regularButton {
+	background: #851211; /* Old browsers */
+	background: -moz-linear-gradient(top,  #851211 0%, #6f0f0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#851211), color-stop(100%,#6f0f0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #851211 0%,#6f0f0e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#851211', endColorstr='#6f0f0e',GradientType=0 ); /* IE6-9 */
+	border-left: 1px #530b0a solid;
+	border-bottom: 1px #530b0a solid;
+	border-top: 1px #ca4644 solid;
+	color: #e0e0dd;
+	font-family: 'News Cycle', sans-serif;
+	line-height: 20px;
+	padding: 3px 15px 4px;
+	border-radius: 5px;
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: none;
+	position: relative;
+	z-index: 100;
+}
+
+a.btn.special {
+	background: #851211; /* Old browsers */
+	background: -moz-linear-gradient(top,  #851211 0%, #6f0f0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#851211), color-stop(100%,#6f0f0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #851211 0%,#6f0f0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #851211 0%,#6f0f0e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#851211', endColorstr='#6f0f0e',GradientType=0 ); /* IE6-9 */
+	border-left: 1px #530b0a solid;
+	border-bottom: 1px #530b0a solid;
+	border-top: 1px #ca4644 solid;
+	color: #e0e0dd;
+	font-family: 'News Cycle', sans-serif;
+	line-height: 20px;
+	padding: 8px 20px 10px;
+	border-radius: 5px;
+	display: block;
+	text-align: left;
+	font-size: 15px;
+	font-weight: normal;
+	text-shadow: none;
+	position: relative;
+}
+
+a.btn:hover {
+	background: #af1716;
+	border-left: 1px #af1716 solid;
+	border-right: 1px #af1716 solid;
+	border-bottom: 1px #af1716 solid;
+	border-top: 1px #af1716 solid;
+}
+
+a.btn.openNewWindow .icon {
+	 background-image: url(../img/open_new.png);
+	 background-repeat: no-repeat;
+	 height: 17px;
+	 width: 17px;
+	 position: absolute;
+	 right: 10px;
+	 top: 11px;
+}
+
+a.btn.getStarted .icon {
+	 background-image: url(../img/arrow.png);
+	 background-repeat: no-repeat;
+	 height: 17px;
+	 width: 17px;
+	 position: absolute;
+	 right: 10px;
+	 top: 11px;
+}
+
+a.btn.downloadSaiku .icon {
+	 background-image: url(../img/download.png);
+	 background-repeat: no-repeat;
+	 height: 17px;
+	 width: 17px;
+	 position: absolute;
+	 right: 10px;
+	 top: 11px;
+}
+
+a.btn.watchVideo .icon {
+	 background-image: url(../img/video.png);
+	 background-repeat: no-repeat;
+	 height: 17px;
+	 width: 17px;
+	 position: absolute;
+	 right: 10px;
+	 top: 11px;
+}
+
+a.btn.regularButton.openNewWindow .icon,
+a.btn.regularButton.watchVideo .icon,
+a.btn.regularButton.downloadSaiku .icon,
+a.btn.regularButton.getStarted .icon {
+	 top: 5px;
+	 right: 7px;
+}
+
+.headerLinkButtons {
+	position:absolute;
+	top:260px;
+}
+
+.headerLinkButtonsNotIndex {
+	position: relative;
+	top: 0px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.footer a.btn.special {
+	margin-top: 20px;
+}
+
+.featuresRow hr {
+	margin: -10px 0px 15px;
+}
+
+.lightBackground h3 {
+	color: #000;
+}
+
+p.red {
+	color: #af1716;
+	line-height: 40px;
+	margin: 10px 0px;
+	font-weight: 400;
+}
+
+hr.sideBarLinks {
+	margin: 5px 0px;
+}
+
+p.featureList {
+	margin-left: 20px;
+}
+
+a:link,
+a:visited {
+	color: #333;
+}
+
+a:hover,
+a:active {
+	color: #af1716;
+	text-decoration: none;
+}
+
+.emphasisParagraph {
+	font-weight: 400;
+	color: #000;
+}
+
+.price {
+	font-size: 88px;
+	line-height: 100px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.price span.dollar {
+	font-size: 26px;
+	line-height: 20px;
+	position: absolute;
+	margin-left: -15px;
+	margin-top: 20px;
+}
+
+span.letter {
+	width: 26px;
+	height: 26px;
+	background: #791110;
+	display: block;
+	margin-bottom: 20px;
+	background-image: url(../img/email.png);
+	background-position: center center;
+}
+
+span.letter:hover {
+	background-color: #af1716;
+}
+
+a.letterLink {
+	width: 26px;
+	height: 26px;
+	display:inline-block;
+}

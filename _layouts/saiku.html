@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <!-- /Google Fonts -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
+        </script>
+
+        <!-- bxSlider Javascript file -->
+        <script src="/js/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+        
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="/css/magnific-popup.css"> 
+        <!-- Magnific Popup core JS file -->
+        <script src="/js/jquery.magnific-popup.min.js"></script> 
+
+        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        
+<div class="header saikuheader">
+	<div class="content">
+		<div class="saikuanalytics">
+          <h1><a href="/">Meteorite Hosting</a></h1>
+		</div>
+            <div class="contact"><a href="tel://442081333730"><p>t:+44 20 8133 3730</p></a><p style="margin-top:0px">e: <a href="mailto:info@meteorite.bi">info@meteorite.bi</a></p></div>
+
+	</div>
+</div>
+<div class="backgroundimg internal saikuSubheader saikuBanner" id="headerTitle">
+    <div style="height: 262px;width:90%;margin:auto;text-align:center;" class="row">
+<div style="display:inline-block;vertical-align:middle;">
+<h1 style="margin-top: 1px;" class="sliderTitle">
+<!-- logo and / or text?
+See how it works
+--></h1>
+<div class="span2"><a class="btn regularButton watchVideo" href="http://meteorite.bi/saiku/sponsor" target="_self">SPONSOR<span class="icon"></span></a></div>
+<div class="span2"><a class="btn regularButton openNewWindow" href="http://saiku.meteorite.bi" target="_self">HOME <span class="icon"></span></a></div><br><br>
+<div class="span2"><a class="btn regularButton downloadSaiku" href="http://meteorite.bi/saiku/download" target="_self">DOWNLOAD <span class="icon"></span></a></div>
+<div class="span2"><a class="btn regularButton downloadSaiku" href="http://meteorite.bi/saiku/support" target="_self">GET SUPPORT <span class="icon"></span></a></div>
+</div>
+<div style="display:inline-block;vertical-align:middle;  ">
+  <img alt="" src="http://meteoriteconsulting.com/assets/layout/xscreen-preview-small.png.pagespeed.ic.lXBKa4jh7_.png?timestamp=1376570431627">
+</div>
+  
+</div>
+<div style="display: inline-block; vertical-align: top;padding-right:50px;" id="home">
+  <h1>Contents</h1>
+  <ul class="posts">
+    {% for post in site.posts reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="cont"  style="display: inline-block;" >
+	{{ content }}
+</div>
+<div class="footer">
+   <div class="content">
+      <div class="footer_nav">
+         <ul id="nav">
+            <li id="" class=""><a href="http://saiku.meteorite.bi/">Home</a></li>
+            <li id="services" class=" dropdown">
+               <a href="http://meteorite.bi/services">Services</a>
+               <ul>
+                  <li class="top"></li>
+                  <li id="consultancy"><a href="http://meteorite.bi/services/consultancy">Consultancy</a></li>
+                  <li id="training"><a href="http://meteorite.bi/services/training">Training</a></li>
+                  <li id="support"><a href="http://meteorite.bi/services/support">Support</a></li>
+                  <li id="development"><a href="http://meteorite.bi/services/development">Development</a></li>
+                  <li class="bottom"></li>
+               </ul>
+            </li>
+            <li id="technologies" class=" dropdown">
+               <a href="http://meteorite.bi/technologies">Technologies</a>
+               <ul>
+                  <li class="top"></li>
+                  <li class="children" id="reporting-anlytics">
+                     <a href="http://meteorite.bi/technologies#1">Reporting and Analytics</a>
+                  </li>
+                  <li class="children" id="">
+                     <a href="http://meteorite.bi/technologies#2">Relational Databases</a>
+                  </li>
+                  <li class="children" id="">
+                     <a href="http://meteorite.bi/technologies#3">Column Databases</a>
+                  </li>
+                  <li class="children" id="">
+                     <a href="http://meteorite.bi/technologies#4">Big Data</a>
+                  </li>
+                  <li class="children" id="">
+                     <a href="http://meteorite.bi/technologies#5">ETL</a>
+                  </li>
+                  <li class="bottom"></li>
+               </ul>
+            </li>
+            <li id="hosting" class=""><a href="http://www.meteoritecloud.com" target="_blank">Cloud</a></li>
+            <li id="saiku" class=" dropdown">
+               <a href="/saiku">Saiku</a>
+               <ul>
+                  <li class="top"></li>
+                  <li id="saikuimages"><a href="http://meteorite.bi/saiku/saikuimages">Images</a></li>
+                  <li id="downloads"><a href="http://meteorite.bi/saiku/downloads">Downloads</a></li>
+                  <li id="docs"><a href="http://docs.analytical-labs.com/" target="_blank">Documentation</a></li>
+                  <li id="issues"><a href="https://github.com/OSBI/saiku/issues">Issue Tracker</a></li>
+                  <li id="forums"><a href="http://ask.analytical-labs.com/" target="_blank">Forums</a></li>
+                  <li class="bottom"></li>
+               </ul>
+            </li>
+            <li id="customers" class=""><a href="http://meteorite.bi/customers">Customers</a></li>
+            <li id="blog" class=""><a href="http://meteorite.bi/blog">Blog</a></li>
+            <li id="contact" class=" dropdown">
+               <a href="http://meteorite.bi/contact">Contact</a>
+               <ul>
+                  <li class="top"></li>
+                  <li id="offices"><a href="http://meteorite.bi/contact/offices">Offices</a></li>
+                  <li id="social"><a href="http://meteorite.bi/contact/social">Social</a></li>
+                  <li class="bottom"></li>
+               </ul>
+            </li>
+            <li id="sitesearch" class=""><a href="http://meteorite.bi/sitesearch">Search</a></li>
+         </ul>
+      </div>
+      <div class="contact">
+         <h2>Get in Touch</h2>
+         <p>Call us on <strong>+44 20 8133 3730</strong> or email us at <a href="mailto:info@meteoriteconsulting.com">info@meteoriteconsulting.com</a></p>
+         <p>Follow us on <a target="_blank" href="http://twitter.com/meteorite_bi">Twitter</a> or find us on 
+            <a target="_blank" href="https://www.facebook.com/meteoritebi">Facebook</a>.
+         </p>
+         <p><small>&copy; 2013. Meteorite Consulting · Meteorite Consulting is a trading name of OSBI Ltd.<br><a href="/privacy">Privacy Policy</a> · <a title="Website Design and Bespoke Content Management System" href="http://jackbarber.co.uk" target="_blank">Website Design</a></small></p>
+      </div>
+   </div>
+</div>
+        
+</div>
+
+        <script>
+            $(document).ready(function() {
+                
+                $('.watchVideo').magnificPopup({
+                    type:'iframe'
+                });
+            });
+        </script>
+
+        <script src="/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/js/main.js"></script>
+
+        <script>
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; ( function(d, t) {
+                    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                    g.src = '//www.google-analytics.com/ga.js';
+                    s.parentNode.insertBefore(g, s)
+                }(document, 'script'));
+        </script>
+    </body>
+</html>
+
