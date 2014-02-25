@@ -10,16 +10,16 @@ How to get started in a hurry
 
 Because we are nice folks here at Analytical Labs we like to make your lives as easy as possible. To get started with Saiku we have created a bundle that has a sample set of data that means you can install and evaluate Saiku without having to supply your own data set and cube if you don't have one, or even know what a cube is.
 
-To get started navigate to the Analytical Labs website and download a Saiku server package that includes the sample database(labeled Saiku Server (Including Foodmart DB)). This package contains, a Tomcat server, the Saiku server, the Saiku user interface, an in memory database with a dataset called Foodmart and the Mondrian schema required to access the data from Saiku.
+To get started navigate to the Analytical Labs website and [download]({{ site.url }}/saiku/download) a Saiku server package that includes the sample database(labeled Saiku Server (Including Foodmart DB)). This package contains, a Tomcat server, the Saiku server, the Saiku user interface, an in memory database with a dataset called Foodmart and the Mondrian schema required to access the data from Saiku.
 
 Once you have downloaded this archive, you need to extract it. To do this on a Windows computer you use the built-in extractor tool, or your favourite archive manager. In Linux you can do this with:
 
-$ tar xvfz saiku-server-foodmart-2.2-RC1.tar.gz
+    $ tar xvfz saiku-server-foodmart-2.5.tar.gz
 
-This will extract the archive into a directory called saiku-server. All that remains now is for you to start the server this can be done on a Window machine by running start-saiku.sh. On a Linux box you have to do the following:
+This will extract the archive into a directory called saiku-server. All that remains now is for you to start the server this can be done on a Windows machine by running start-saiku.bat. On a Linux box you have to do the following:
 
-$ cd saiku-server
-$ sh start-saiku.sh
+    $ cd saiku-server
+    $ sh start-saiku.sh
 
 This will start the supplied Tomcat server and all the required components to make the Saiku server operational. After a few seconds if you navigate to http://localhost:8080 you will be greated with the Saiku user interface. To login enter the username: admin and the password: admin.
 
