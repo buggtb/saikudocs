@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Development"
 date:   2013-08-15 12:05:09
-categories: saiku documentation
+categories: saiku documentation development
 ---
 
 Building Saiku

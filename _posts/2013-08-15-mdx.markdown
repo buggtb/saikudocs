@@ -2,7 +2,7 @@
 layout: saiku
 title:  "MDX"
 date:   2013-08-15 12:05:02
-categories: saiku documentation
+categories: saiku documentation frontend
 ---
 
 Writing MDX queries

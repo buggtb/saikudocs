@@ -67,10 +67,40 @@ See how it works
 </div>
 <div style="display: inline-block; vertical-align: top;padding-right:50px;" id="home">
   <h1>Contents</h1>
-  <ul class="posts">
-    {% for post in site.posts reversed %}
+
+  <h2>About Saiku</h2>
+  <ul>
+    {% for post in site.categories.about reversed %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+  {% endfor %}  
+  </ul>  
+
+  <h2>Installation</h2>
+  <ul>
+    {% for post in site.categories.installation reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}  
+  </ul>  
+  
+  <h2>Configuration</h2>
+  <ul>
+    {% for post in site.categories.configuration reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}  
+  </ul>     
+  
+  <h2>Frontend</h2>
+  <ul>
+    {% for post in site.categories.frontend reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}  
+  </ul>
+
+  <h2>Development</h2>
+  <ul>
+    {% for post in site.categories.development reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}  
   </ul>
 </div>
 

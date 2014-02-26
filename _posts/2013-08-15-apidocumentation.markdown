@@ -2,7 +2,7 @@
 layout: saiku
 title:  "API Documentation"
 date:   2013-08-15 12:06:09
-categories: saiku documentation
+categories: saiku documentation development
 ---
 
 Server Documentation

@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Licensing"
 date:   2013-08-15 12:08:09
-categories: saiku documentation
+categories: saiku documentation about
 ---
 
 Saiku Licensing

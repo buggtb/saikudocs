@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Visualisation"
 date:   2013-08-15 12:02:08
-categories: saiku documentation
+categories: saiku documentation frontend
 ---
 
 Visualisation

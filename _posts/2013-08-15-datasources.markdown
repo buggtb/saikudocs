@@ -2,32 +2,73 @@
 layout: saiku
 title:  "Data Sources"
 date:   2013-08-15 12:02:09
-categories: saiku documentation
+categories: saiku documentation configuration
 ---
 
-Adding A New Data Source
+Data Sources
 ========================
 
-Whilst we haven't yet had the time or resource to create a lovely graphical admin console for you system administrators we have tried to make it simple for you to add data sources to the Saiku platform.
+Whilst we haven't yet had the time or resource to create a lovely graphical admin console for you system administrators we have tried to make it simple for you to add new data sources to the Saiku platform.
 
-The Saiku server is shipped with Foodmart by default. So I shall show you how to import the steel-wheels schema and configure it to use a MySQL database connection.
+Data Source Definition
+=========================
+All data sources are stored as plain text files in folder `saiku-server/tomcat/webapps/saiku/WEB-INF/classes/saiku-datasources/` with one data source per file. You can use your favourite text editor to add/edit data source.
 
-Firstly navigate to saiku-server/tomcat/webapps/saiku/WEB-INF/classes/saiku-datasources/ and copy the file named foodmart and rename it steelwheels. Next edit this new steelwheels file and configure it in a similar way to the following:
-
+This is how sample data source for MySQL looks like:
+ 
     type=OLAP
     name=steelwheels
     driver=mondrian.olap4j.MondrianOlap4jDriver
     location=jdbc:mondrian:Jdbc=jdbc:mysql://localhost/sampledata;Catalog=res:foodmart/Foodmart.xml;JdbcDrivers=com.mysql.jdbc.Driver;
     username=dbuser
     password=password
-	
 
-So what we have done here is told Saiku the new name of the connection is steelwheels. We then told Saiku the location of the database and mondrian schema, for which I have created a steelwheels folder under the webapp/ directory. We finally set the database username and password. Once you have installed your schema definition, restart your server. It doesn't get much simpler than that.
+Every data source definition contains at least the following elements:
 
-Adding a new JDBC Driver
+ - `type` - Always OLAP.
+ - `name` - Name of data source. This name will be shown to Saiku user together with cube name. Can contain spaces.
+ - `driver` - Driver for specific database. See examples below to find correct driver for your data.
+ - `location` - Location of data and Mondrian schema (see Location Details).
+ - `username` - Username to be used when connecting to data source.
+ - `password` - Password to be used when connecting to data source.
+
+Location Details
+-----------------
+For MySQL, PostgreSQL and DB2 you have to define the following in `location`:
+
+  1. JDBC connection string
+  2. Mondrian schema destination
+  3. JDBC driver name 
+ 
+###JDBC Connection String
+The following describes JDBC connection string patterns for most common databases:
+
+ - MySQL: `jdbc:mysql://[database host]/[database name]`
+ - PostgreSQL: `jdbc:postgresql://[database host]:[port]/[database name]`
+ - DB2: `jdbc:db2://[database host]:[port]/[DATABASE NAME]`
+ 
+###Mondrian Schema Destination
+Destination of Mondrian schema is specified using `Catalog` attribute. Destination must include full file name, including extension.
+
+Examples:
+
+ - `Catalog=res:foodmart/Foodmart.xml` will search for schema named `Foodmart.xml` in directory `saiku-server/tomcat/webapps/saiku/WEB-INF/classes/foodmart`
+ - `Catalog=res:Foodmart.xml` will search for schema named `Foodmart.xml` in directory `saiku-server/tomcat/webapps/saiku/WEB-INF/classes/` 
+
+###JDBC Driver Name
+
+ - MySQL: `com.mysql.jdbc.Driver`
+ - PostgreSQL: `org.postgresql.Driver`
+ - DB2: `com.ibm.db2.jcc.DB2Driver`
+  
+ Adding a New JDBC Driver
 ========================
 
-Obviously not everyone uses Hypersonic or MySQL to connect to their data warehouses. To use your specific database, please add the JDBC connector jar file to saiku-server/tomcat/webapps/saiku/WEB-INF/lib/ and then make the appropriate changes to the jdbc portion of the location string in the connection file.
+Obviously not everyone uses Hypersonic or MySQL to connect to their data warehouses. To use your specific database you will have to add new JDBC driver to Saiku:
+
+  1. Get JDBC driver for your database.
+  2. Add the JDBC connector jar file to `saiku-server/tomcat/webapps/saiku/WEB-INF/lib/`.
+  3. Restart server.
 
 Sample Data Sources
 ===================
@@ -68,9 +109,11 @@ Mondrian on PostgreSQL
     type=OLAP
     name=db_name
     driver=mondrian.olap4j.MondrianOlap4jDriver
-    location=jdbc:mondrian:Jdbc=jdbc:postgresql://database_host:port/db_name;Catalog=res:data_directory/schema_file.mondrian.xml;JdbcDrivers=org.postgresql.Driver;
+    location=jdbc:mondrian:Jdbc=jdbc:postgresql://localhost:5432/db_name;Catalog=res:foodmart/Foodmart.xml;JdbcDrivers=org.postgresql.Driver;
     username=db_user_name
     password=db_password
+    
+JDBC driver for PostgreSQL can be downloaded here: [http://jdbc.postgresql.org/download.html](http://jdbc.postgresql.org/download.html)
 
 XML/A (Microsoft SSAS)
 ----------------------
@@ -97,7 +140,6 @@ With DB2, schema files must define tables, views and columns in UPPER CASE. DB2 
     location=jdbc:mondrian:Jdbc=jdbc:db2://servername:port/SAMPLE;Catalog=res:foodmart/Foodmart.xml;JdbcDrivers=com.ibm.db2.jcc.DB2Driver;
     username=username
     password=password
-
-
-
-  
+    
+    
+    

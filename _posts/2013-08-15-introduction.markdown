@@ -2,7 +2,7 @@
 layout: postsaiku
 title:  "Introduction"
 date:   2013-08-15 12:00:00
-categories: saiku documentation
+categories: saiku documentation about
 ---
 
 Saiku was founded in 2008 by Tom Barber and Paul Stoellberger. Originally called the Pentaho Analysis Tool, if started life as a basic GWT based wrapper around the OLAP4J library. Over the years it has evolved, and after a complete rewrite in 2010, it was reborn as Saiku.
