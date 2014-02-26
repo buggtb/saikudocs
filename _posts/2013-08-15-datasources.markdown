@@ -26,7 +26,7 @@ This is how sample data source for MySQL looks like:
 Every data source definition contains at least the following elements:
 
  - `type` - Always OLAP.
- - `name` - Name of data source. This name will be shown to Saiku user together with cube name. Can contain spaces.
+ - `name` - Name of data source. This name will be shown to Saiku user together with schema name. Can contain spaces.
  - `driver` - Driver for specific database. See examples below to find correct driver for your data.
  - `location` - Location of data and Mondrian schema (see Location Details).
  - `username` - Username to be used when connecting to data source.
