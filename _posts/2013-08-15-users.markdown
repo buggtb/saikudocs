@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Users"
 date:   2013-08-15 12:03:09
-categories: saiku documentation
+categories: saiku documentation security configuration
 ---
 
 Adding New Users To The Default Security Configuration

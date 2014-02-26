@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Roles"
 date:   2013-08-15 12:04:09
-categories: saiku documentation
+categories: saiku documentation security configuration
 ---
 
 Mondrian Roles

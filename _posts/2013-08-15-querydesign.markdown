@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Query Design"
 date:   2013-08-15 12:02:07
-categories: saiku documentation
+categories: saiku documentation frontend
 ---
 
 

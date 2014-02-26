@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Data Sources"
 date:   2013-08-15 12:02:09
-categories: saiku documentation
+categories: saiku documentation configuration
 ---
 
 Data Sources

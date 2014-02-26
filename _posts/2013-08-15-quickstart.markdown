@@ -2,7 +2,7 @@
 layout: saiku
 title:  "Quickstart"
 date:   2013-08-15 12:01:09
-categories: saiku documentation
+categories: saiku documentation installation
 ---
 
 How to get started in a hurry
